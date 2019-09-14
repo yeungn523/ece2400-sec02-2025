@@ -1,5 +1,6 @@
 
-ECE 2400 Section 2
+ECE 2400 Section 3
 ==========================================================================
 
-Example git repo that goes along with section 2.
+Git repo that goes along with section 3.
+
