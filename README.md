@@ -1,6 +1,6 @@
 
-ECE 2400 Section 3
+ECE 2400 Section 2
 ==========================================================================
 
-Git repo that goes along with section 3.
+Git repo that goes along with section 2.
 
