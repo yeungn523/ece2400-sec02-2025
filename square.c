@@ -2,5 +2,5 @@
 
 int square( int x )
 {
-  return x * x;
+  // insert code to calculate square here
 }
