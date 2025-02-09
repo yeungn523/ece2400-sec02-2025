@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int avg(int x, int y) {
-  // insert code to calculate average here
+  return (x + y) / 2;
 }
 
 int main() {
