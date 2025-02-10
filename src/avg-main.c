@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int avg(int x, int y) {
-  return (x + y) / 2;
+  // OOPS: a bug
+  return (x - y) / 2;
 }
 
 int main() {
