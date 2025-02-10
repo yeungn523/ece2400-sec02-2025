@@ -2,9 +2,7 @@ name: CMake
 
 on:
   push:
-    branches: [ "sec04" ]
   pull_request:
-    branches: [ "sec04" ]
 
 jobs:
 
