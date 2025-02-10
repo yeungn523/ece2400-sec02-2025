@@ -1,0 +1,25 @@
+name: CMake
+
+on:
+  push:
+    branches: [ "sec04" ]
+  pull_request:
+    branches: [ "sec04" ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: docker://danger89/cmake:latest
+
+    - name: Configure CMake
+      run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+    - name: Build
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
+
+    - name: Test Avg Main
+      working-directory: ${{github.workspace}}/build
+      run: ./src/avg-main && ./src/avg-main | grep 15
